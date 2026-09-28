@@ -1,3 +1,4 @@
+import { AutoRefresh } from "@/components/auto-refresh";
 import { logoutAction } from "@/lib/actions";
 
 const links = [
@@ -36,7 +37,10 @@ export function Shell({
           <button type="submit">Sign out</button>
         </form>
       </aside>
-      <main>{children}</main>
+      <main>
+        <AutoRefresh />
+        {children}
+      </main>
     </div>
   );
 }
