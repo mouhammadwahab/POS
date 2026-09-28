@@ -7,11 +7,10 @@ The service role key is used only on the server. Do not put it in the browser or
 ## Local run
 
 ```powershell
-cd web
 copy .env.example .env.local
 ```
 
-Fill `web/.env.local`:
+Fill `.env.local`:
 
 - `SUPABASE_URL` — project URL
 - `SUPABASE_SERVICE_ROLE_KEY` — service role key from Supabase project settings
@@ -28,8 +27,8 @@ Open http://localhost:3000 and sign in. Sync the till from Settings → Online c
 
 ## Deploy on Vercel
 
-1. Import this repository in Vercel.
-2. Set the project root directory to `web`.
+1. Import [mouhammadwahab/POS](https://github.com/mouhammadwahab/POS) in Vercel.
+2. Leave the project root as the repository root. This repository is the Next.js app.
 3. Add the same three environment variables.
 4. Deploy.
 
